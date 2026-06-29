@@ -1,0 +1,1252 @@
+/********************
+Fonts & Tags
+********************/
+
+@font-face {
+  font-family: 'Lato-Light';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato-Light'), local('Lato-Light'), url(../fonts/latoLight.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Lato-Light-a';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato-Light'), local('Lato-Light'), url(../fonts/latoLight.woff) format('woff');
+}
+
+
+body {
+    font-family:'Lato-Light';
+
+    background-image:url("../img/lionsBackground.jpg");
+    background-size:cover;
+    background-size:115%;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+
+/********************
+Reusables
+********************/
+
+.text-align-center {
+	text-align:center;
+}
+
+.body_text {
+    padding: 50px 20px 50px 20px;
+    font-size:1.5em;
+    font-family:"Lato-Light-a";
+    color:white;
+    text-align:center;
+}
+
+.body_text h1 {
+ font-size:2em;
+}
+
+.dark {
+    background-color:rgba(0,0,0,0.5);
+}
+
+/********************
+Body
+********************/
+
+
+
+
+
+
+
+
+/*	Use 20 asterisks and a slash	*/
+
+/********************
+Cover
+********************/
+
+#cover-background {
+
+	height:100vh;
+	width:100vw;
+	margin-top:0vh;
+	opacity:1;
+
+	
+
+
+
+
+}
+
+#cover-background h1 {
+
+    position:relative;
+    top:-3vw;
+    left:-3vw;
+}
+
+#cover-positioner h1 {
+		text-align:center;
+}
+
+#cover-background p {
+	position:absolute;
+	top:0vw;
+	margin-top:15vw;
+	padding-left:5vw;
+    padding-right:5vw;
+	font-size:11vh;
+
+		-webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.1s;
+
+    background-color:rgba(0,255,255,1);
+
+
+}
+
+
+.button {
+
+    border: none;
+    color: white;
+   
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.button3 {
+    background-color:rgba(0,255,210,0.9);
+    color: black; 
+ 
+    position:absolute;
+	height:15vh;
+	margin-top:77.5vh;
+	margin-left:5vw;
+	border:10px;
+    padding-left:10vw;
+    padding-right:10vw;
+	
+	
+
+	font-size:5vh;
+	font-family: 'Lato-Light';
+	border-radius:10px;
+
+}
+
+.button3:hover {
+    background-color: white;
+    color: black;
+}
+
+#mainbutton {
+	
+
+	background-color:black;
+	border-color:white;
+
+}
+
+
+
+
+/********************
+Nav
+********************/
+
+#nav {
+
+	/*background: -webkit-linear-gradient(#e6e6e6, #ffffff); /* For Safari 5.1 to 6.0 */
+    /*background: -o-linear-gradient(#e6e6e6, #ffffff); /* For Opera 11.1 to 12.0 */
+    /*background: -moz-linear-gradient(#e6e6e6, #ffffff); /* For Firefox 3.6 to 15 */
+    /*background: linear-gradient(#e6e6e6, #ffffff); /* Standard syntax */
+
+    list-style-type:none;
+	font-size:1.3vw;
+
+
+
+	padding:2vw;
+    margin-top:-1vw;
+
+
+
+  	overflow: hidden;
+
+  	position:fixed;
+  	width:100%;
+  	height:5vw;
+    
+
+
+
+
+    top:0px;
+    z-index:2;
+    background-color:rgba(255,255,255,0.8);
+}
+
+#nav.scrolled {
+background-color:rgba(255,255,255,0.9);
+	-webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+        height:1.5vw;
+        margin-top:-1vw;
+          overflow: hidden;
+
+}
+
+
+#navLogo.scrolled {
+    cursor:initial;
+}
+
+#mobileTopBar {
+    
+    opacity:0;
+    transition-duration:0.2s;
+    width:100%;
+    background-color:red;
+    position:fixed;
+            height:2vw;
+        min-height:55px;
+    background-color:rgba(255,255,255,0.9);
+    text-align:center;
+
+     z-index:2;
+   
+}
+
+
+
+#mobileTopBar.scrolled {
+    z-index:2;
+    background-color:rgba(255,255,255,0.9);
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+        
+}
+
+#navLogoMobile {
+    opacity:0; 
+    height:70%;
+    padding-top:10px;
+    right:0vw;
+    transition-duration:0.2s;
+
+
+}
+
+#nav li {
+
+
+
+    margin-top:2.5vw;
+    
+    padding-left:2.5vw;
+    padding-right:2vw;
+    border-radius:0.2vw;
+    position:relative;
+
+
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+
+
+}
+
+#nav li.scrolled {
+
+
+       margin-top:0.4vw;
+      
+
+    
+}
+
+#navLogo.scrolled{
+        margin-top:-1vw;
+        z-index:2;
+
+}
+
+#nav a:link, #nav a:visited, #nav a:active {
+	cursor:pointer;
+	color:black;
+	text-decoration:none;	
+}
+
+.navItem {
+    padding:1vw;
+
+    border-radius:3px;
+    border-width:3px;
+    border-color:transparent;
+
+
+}
+
+.navItem:hover{
+
+	background-color:rgba(255,255,255,1);
+
+        cursor: pointer;
+            -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border-style: solid;
+  border-width: 3px;
+}
+
+
+#nav li {
+	float:left;
+	margin-left:5vw;
+        border-radius: 5px;
+}
+
+#nav img {
+    max-width:15vw;
+        margin-top:-1vw;
+
+}
+
+.navHole {
+    height:0px;
+    padding:0px;
+    margin:0px;
+    transition-duration:0.2s;
+}
+
+
+
+
+
+/********************
+Portfolio
+********************/
+
+#getInTouch, #about {
+ background-color:rgba(255,255,255,0.5);
+ padding-bottom:50px;
+}
+
+
+.portfolioBody {
+ background-color:rgba(255,255,255,1);
+ height:72.5vw;
+ padding-top:4vw;
+}
+
+/********************
+Color Bars
+********************/
+
+
+
+.barContainer {
+
+    position:inherit;
+    border-radius:10px;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+    z-index:3;
+
+
+}
+
+.barContainer:hover {	  
+	background-color:rgba(212,212,212,0.1);
+	
+}
+
+
+
+
+
+.bar1, .bar2, .bar3 {
+
+    min-width:30px;
+    min-height:5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.2s;
+
+}
+
+
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-50deg) translate(-9px, 6px) ;
+    transform: rotate(-50sdeg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/********************
+Dropdown Menu
+********************/
+
+#dropdown {
+    height:0vh;
+  
+
+    transition:0.2s;
+    -webkit-transition:0.2s;
+    position:fixed;
+    z-index:1;
+    left:0px;
+
+
+}
+
+#dropdown ul {
+        padding-top:100px;
+        font-size:5vh;
+}
+
+#dropdown li {
+    display:none;
+    float:none;
+    text-align:center;
+    
+
+
+        transition:0.2s;
+    -webkit-transition:0.2s;
+
+
+
+
+list-style-type:none;
+    color:red;
+    cursor:pointer;
+
+}
+
+#dropdown.show li a:active,
+#dropdown.show li a:link, #dropdown.show li a:visited {
+    color:white;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+#dropdown.show {
+    background-color:rgba(1,1,1,1);
+    height:100%;
+    width:100%;
+}
+
+#dropdown.show li {
+    display:inherit;
+    height:15vh;
+    color:red;
+
+    left:100px;
+}
+
+#dropdown.show ul {
+
+    position:fixed;
+    width:100%;
+    right:0vw;
+}
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color:white;
+    color: black;
+    padding: 9px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+    position:fixed;
+    top:10px;
+    right:20px;
+    border-radius:10px;
+    transition:0.2s;
+    -webkit-transition:0.2s;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: silver;
+        transition:0.2s;
+    -webkit-transition:0.2s;
+}
+
+/* Dropdown Content (Hidden by Default) mydropdown not used in css */
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color:rgba(255,255,255,1);
+    min-width: 160px;
+    z-index: 1;
+
+    height:100vh;
+    width:100vw;
+    top:55px;
+    text-align:center;
+
+        transition:0.2s;
+    -webkit-transition:0.2s;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    height:10vh;
+    font-size:5vh;
+    padding-top:5vh;
+        transition:0.2s;
+    -webkit-transition:0.2s;
+
+
+    color: black;
+
+
+
+}
+
+
+
+#dropdown1:hover{
+        background-color:rgba(200,200,200,0.8)
+}
+#dropdown2:hover{
+        background-color:rgba(200,200,200,0.8)
+}
+#dropdown3:hover{
+        background-color:rgba(200,200,200,0.8)
+}
+#dropdown4:hover{
+        background-color:rgba(200,200,200,0.8)
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: black;
+    color:white;
+    -webkit-transition:0.2s;
+    transition:0.2s;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+#myDropdown {
+    opacity:0;
+    -webkit-transition:1s;
+    transition:1s;
+}
+
+#myDropdown.clicked{
+    opacity:1;
+    -webkit-transition:1s;
+    transition:1s;
+
+
+}
+
+/*******************
+Portfolio 2
+*******************/
+
+.container {
+  position: relative;
+  width: 31.3%;
+  float:left;
+  margin:1%;
+  background-color:silver;
+  border-radius:10px;
+
+}
+
+
+.container:hover {
+    cursor:pointer;
+}
+
+.container h1 {
+    text-align:center;
+    font-size:2vw;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+    transition: .5s;
+      border-radius:10px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.4);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s;
+        border-radius:10px;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+
+}
+
+.text {
+
+  color: white;
+  font-size: 2.5vw;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  text-align:center;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.portfolioBody h1 {
+    color:black;
+}
+
+.portfolioBody h1:link {
+    color:black;
+}
+
+
+.container:hover .image {
+        -webkit-filter: blur(2px); /* Safari */
+    filter: blur(2px);
+}
+
+#noProject:hover .image {
+        -webkit-filter: blur(0px); /* Safari */
+    filter: blur(0px);
+    cursor:initial;
+    
+}
+
+/*******************
+getInTouch
+*******************/
+#getInTouch {
+    height:50vw;
+        background-color:rgba(50,215,50,0.8);
+    color:white;
+        text-align:center;
+}
+
+
+
+#getInTouch h1 {
+    padding:0;
+    margin:0;
+        text-align:center;
+    color:white;
+    font-size:4vw;
+    padding-top:3vw;
+}
+
+#getInTouch p {
+    font-size:2vw;
+}
+
+#ready {
+    background-color:rgba(255,255,255,0.5);
+    font-size:3vw;
+    color:black;
+}
+
+
+
+
+
+/*******************
+about
+*******************/
+#about {
+    height:inherit;
+    background-color:rgba(255,255,255,0.8);
+        color:black;
+        padding-bottom:2.5vw;
+}
+
+#about h1 {
+    padding:0;
+    margin:0;
+        text-align:center;
+
+    font-size:4vw;
+    padding-top:3vw;
+}
+
+#about p, h2 {
+
+    font-size:2vw;
+    text-align:center;
+
+
+      
+        padding-bottom:3vw;
+        padding-top:3vw;
+
+        padding-left:5vw;
+        padding-right:5vw;
+
+
+    
+}
+
+
+
+#about h2 {
+    background-color:rgba(255,255,255,0.5);
+    font-size:3vw;
+    //box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+
+}
+
+/*******************
+about - imgBar
+*******************/
+
+#imgBar {
+    background-color:rgba(255,255,255,1);
+    text-align:center;
+    height:inherit;
+    padding-bottom:5vw;
+    padding-top:5vw;
+}
+
+#imgBar img {
+    width:10vw;
+
+}
+
+
+/*******************
+Portfolio Icons
+*******************/
+
+#graphicDesignIcon, #webDesignIcon {
+    width:15vw;
+    display:inline;
+    position:absolute;
+    top:22.5vw;
+    left:16.5vw;
+    transition-duration:0s;
+}
+
+/*******************
+Footer
+*******************/
+
+#footer {
+    height:inherit;
+    background-color:rgba(0,0,0,1);
+    padding-bottom:2.5vw;
+    padding-top:2.5vw;
+
+
+}
+
+#icons {
+    float:right;
+    padding-right:25px;
+}
+
+#footer p {
+    color:white;
+    font-size:3vw;
+}
+
+#icons {
+    text-align:center;
+    padding-bottom:25px;
+}
+
+#icons img {
+    margin-right:25px;
+    height:50px;
+    margin-top:25px;
+    position:relative;
+    left:17.5px;
+
+}
+
+#icons a:hover {
+    cursor:pointer;
+}
+
+#bottomLogo {
+    margin-left:25px;
+}
+
+#bottomLogo img {
+    height:25px;
+    float:left;
+    position:relative;
+    left:7px;
+}
+
+#bottomLogo p {
+    font-size:1.3em;
+}
+
+#bottomLogoMobile {
+        min-width:100%;
+        display:none;
+}
+
+#bottomLogoMobile img {
+max-width:90%;
+padding-left:5%;
+
+}
+
+#btm_container_logo {
+    position:relative;
+    right:5px;
+    
+}
+
+#footer ul {
+    color:white;
+    list-style-type:none;
+}
+
+#footer a {
+    color:white;
+    text-decoration:none;
+}
+
+#footer_copyright li {
+ position:relative;
+ top:10px;
+}
+
+
+
+/********************
+Media Queries
+********************/
+
+
+@media (max-width:600px){
+	#cover-background p {
+	font-size:10vh;
+	}
+
+
+
+}
+
+@media (max-width:900px){
+
+    body {
+    background-color:rgba(250,250,250,1);
+    background-image:none;
+
+
+    }
+
+    .container:hover .overlay {
+      bottom: 0;
+      height: 0%;
+
+
+    }
+
+    .container:hover .image {
+        -webkit-filter: blur(0px); /* Safari */
+    filter: blur(0px);
+    box-shadow:0 0px 0px 0 rgba(255,255,255,1),0 0px 0px 0 rgba(255,255,255,1);
+    }
+    
+
+    #cover-background {
+    background-image:url("../img/computerBgMobile.jpg");
+    background-size:cover;
+    opacity:1;
+    }
+
+
+    .portfolioBody {
+     height:150vw;
+    }
+
+	#nav {
+		display:none;
+	}
+
+	.barContainer {
+		display:initial;
+	}
+    #navLogoMobile {
+    opacity:1;
+
+    }
+    #mobileTopBar {
+        opacity:1;
+    }
+
+    .navHole {
+        height:0vw;
+    }
+
+    .container {
+      position: relative;
+      width: 48%;
+    
+      float:left;
+    }
+
+    #cover-background p {
+        font-size:calc(4vh + 4vw);
+        text-align:center;
+        margin-top:15vh;
+    }
+
+    .button3 {
+
+    color: black; 
+ 
+    position:absolute;
+    height:20vh;
+    margin-top:63.5vh;
+    margin-left:16.5vw;
+    border:10px;
+    width:65vw;
+    
+
+    font-size:5vh;
+    font-family: 'Lato-Light';
+    border-radius:10px;
+
+    }
+
+    .container h1 {
+        font-size:2.5vw;
+}
+
+    .container .text {
+        font-size:5vw;
+    }
+
+    #graphicDesignIcon, #webDesignIcon {
+    width:20vw;
+    display:inline;
+    position:absolute;
+    top:34.5vw;
+    left:27.5vw;
+    transition-duration:0s;
+    }
+
+    #about {
+        padding-top:5vw;
+        height:inherit;
+        padding-bottom:10vw;
+
+    }
+
+    #about h1 {
+    font-size:2.5em;
+    }
+
+    #about h2 {
+    font-size:2em;
+
+    }
+
+
+    #about p {
+            margin-top:5vh;
+            font-size:1.6em;
+    }
+
+    #imgBar {
+        height:52.5vw;
+        padding-top:5vw;
+        padding-bottom:5vw;
+    }
+
+    #imgBar img {
+        width:24vw;
+    }
+
+    #getInTouch {
+        padding-bottom:10vw;
+        height:inherit;
+    }
+
+    #getInTouch h1 {
+
+        padding-bottom:7.5vw;
+        font-size:2.5em;
+    }
+    #getInTouch h2 {
+        font-size:2em;
+  
+    }
+    #getInTouch p {
+        margin-top:5vh;
+        font-size:3.5vh;
+     padding:15px;
+
+    }
+
+    #getInTouch h1 {
+        font-size:3em;
+    }
+
+    #getInTouch {
+    margin-top:0vw;
+    padding-top:0.7vw;
+    }
+
+    #about p {
+        margin-top:5vh;
+        font-size:3.5vh;
+     }
+
+    #about h1 {
+        font-size:3em;
+    }
+
+    #about {
+    margin-top:0vw;
+    padding-top:0.7vw;
+}
+    
+    #about {
+	background-color:rgba(245,245,245,0.9);
+        color:black;
+    }
+    
+#getInTouch {
+    background-color:rgba(50,215,50,1);
+}
+ 
+ .dark {
+    background-color:rgba(255,255,255,1);
+    color:black;
+}
+
+}
+
+
+
+@media (min-width:900px){
+        #dropdown {
+        display:none;
+        }
+        .dropdown{
+            display:none;
+        }
+
+
+
+
+}
+
+@media (max-width:1200px){
+    #nav li {
+        font-size:1.3em;
+        padding-left:1.3vw;
+    }
+
+
+}
+
+}
+@media (max-width:500px){
+    #mobileTopBar {
+        text-align:left;
+    }
+}
+
+@media (max-width:650px){
+        .barContainer {
+
+    }
+
+
+} 
+
+@media (max-width:450px) {
+
+        #noProject {
+            display:none;
+        }
+
+        #cover-background .button {
+            position:relative;
+            top:11vh;
+            width:90vw;
+
+            margin-left:5vw;
+         
+            padding:0;
+           
+
+    }
+    #navLogoMobile {
+        position:relative;
+        right:25vw;
+  
+    }
+    .container {
+      position: relative;
+      width: 98%;
+    
+      float:left;
+    }
+    .portfolioBody {
+     height:575vw;
+        padding-bottom:40px;
+    }
+
+    .container h1 {
+        font-size:5vw;
+    }
+        #graphicDesignIcon, #webDesignIcon {
+    width:40vw;
+    display:inline;
+    position:absolute;
+    top:69vw;
+    left:55vw;
+
+
+    }
+
+    #footer {
+        padding-bottom:100px;
+    }
+
+    #footer li {
+        
+        text-align:center;
+
+    }
+
+    #footer ul {
+        margin-left:0;
+        padding:0;
+        text-align:center;
+        position:relative;
+        top:30px;
+    }
+
+    #icons {
+        position:relative;
+        top:-15px;
+        clear:both;
+        width:100vw;
+        text-align:center;
+        padding-right:0;    
+    }
+
+    #bottomLogo {
+        display:none;
+    }
+
+    #bottomLogoMobile {
+        display:initial;
+           
+            position:absolute;
+            width:100%;
+             text-align:center;
+             margin-top:85px;
+
+
+
+
+    }
+
+    #bottomLogoMobile img {
+        width:75px;
+        margin:0;
+        padding:0;
+     position:relative;
+     top:25px;
+
+ 
+    }
+
+    #footer li {
+        font-size:3vw;
+        position:relative;
+   
+    }
+
+    .button3 {
+
+ 
+    position:absolute;
+    height:15vh;
+    margin-top:55.5vh;
+    margin-left:5vw;
+    border:10px;
+    padding-left:10vw;
+    padding-right:10vw;
+    
+    
+
+    font-size:5vh;
+    font-family: 'Lato-Light';
+    border-radius:10px;
+
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+

@@ -1,0 +1,912 @@
+/********************
+Fonts & Tags
+********************/
+
+@font-face {
+  font-family: 'Lato Light';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Light'), local('Lato-Light'), url(../fonts/latoLight.woff) format('woff');
+}
+
+body {
+    font-family:'Lato Light';
+
+    background-image:url("../img/computerBgMobile.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+
+}
+
+/********************
+Nav
+********************/
+
+#nav {
+
+	/*background: -webkit-linear-gradient(#e6e6e6, #ffffff); /* For Safari 5.1 to 6.0 */
+    /*background: -o-linear-gradient(#e6e6e6, #ffffff); /* For Opera 11.1 to 12.0 */
+    /*background: -moz-linear-gradient(#e6e6e6, #ffffff); /* For Firefox 3.6 to 15 */
+    /*background: linear-gradient(#e6e6e6, #ffffff); /* Standard syntax */
+
+    list-style-type:none;
+	font-size:1.3vw;
+
+
+
+	padding:2vw;
+    margin-top:-1vw;
+
+
+
+  	overflow: hidden;
+
+  	position:fixed;
+  	width:100%;
+  	height:5vw;
+    
+
+
+
+
+    top:0px;
+    z-index:2;
+    background-color:rgba(255,255,255,1);
+}
+
+#nav.scrolled {
+background-color:rgba(255,255,255,0.9);
+	-webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+        height:1.5vw;
+        margin-top:-1vw;
+          overflow: hidden;
+}
+
+
+#navLogo.scrolled {
+    cursor:initial;
+}
+
+#mobileTopBar {
+    
+    opacity:0;
+    transition-duration:0.2s;
+    width:100%;
+    background-color:red;
+    position:fixed;
+            height:2vw;
+        min-height:55px;
+    background-color:rgba(200,200,200,0.8);
+    text-align:center;
+
+     z-index:2;
+   
+}
+
+
+
+#mobileTopBar.scrolled {
+    z-index:2;
+    background-color:rgba(255,255,255,0.9);
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+        
+}
+
+#navLogoMobile {
+    opacity:0; 
+    height:70%;
+    padding-top:10px;
+    right:0vw;
+    transition-duration:0.2s;
+
+
+}
+
+#nav li {
+
+
+
+    margin-top:2.5vw;
+    
+    padding-left:2.5vw;
+    padding-right:2vw;
+    border-radius:0.2vw;
+    position:relative;
+
+
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+
+
+}
+
+#nav li.scrolled {
+
+
+       margin-top:0.4vw;
+      
+
+    
+}
+
+#navLogo.scrolled{
+        margin-top:-1vw;
+        z-index:2;
+
+}
+
+#nav a:link, #nav a:visited, #nav a:active {
+	cursor:pointer;
+	color:black;
+	text-decoration:none;	
+}
+
+.navItem {
+    padding:1vw;
+
+    border-radius:3px;
+
+
+}
+
+.navItem:hover{
+
+	background-color:rgba(212,212,212,1);
+
+        cursor: pointer;
+            -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+    cursor: pointer;
+
+
+	
+
+}
+
+
+#nav li {
+	float:left;
+	margin-left:5vw;
+        border-radius: 5px;
+}
+
+#nav img {
+    max-width:15vw;
+        margin-top:-1vw;
+
+}
+
+.navHole {
+    height:4.5vw;
+    padding:0px;
+    margin:0px;
+    transition-duration:0.2s;
+}
+
+/********************
+Dropdown Menu
+********************/
+
+#dropdown {
+    height:0vh;
+  
+
+    transition:0.2s;
+    -webkit-transition:0.2s;
+    position:fixed;
+    z-index:1;
+    left:0px;
+
+
+}
+
+#dropdown ul {
+        padding-top:100px;
+        font-size:5vh;
+}
+
+#dropdown li {
+    display:none;
+    float:none;
+    text-align:center;
+    
+
+
+        transition:0.2s;
+    -webkit-transition:0.2s;
+
+
+
+
+list-style-type:none;
+    color:red;
+    cursor:pointer;
+
+}
+
+#dropdown.show li a:active,
+#dropdown.show li a:link, #dropdown.show li a:visited {
+    color:white;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+#dropdown.show {
+    background-color:rgba(1,1,1,1);
+    height:100%;
+    width:100%;
+}
+
+#dropdown.show li {
+    display:inherit;
+    height:15vh;
+    color:red;
+
+    left:100px;
+}
+
+#dropdown.show ul {
+
+    position:fixed;
+    width:100%;
+    right:0vw;
+}
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color:white;
+    color: black;
+    padding: 9px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+    position:fixed;
+    top:10px;
+    right:20px;
+    border-radius:10px;
+    transition:0.2s;
+    -webkit-transition:0.2s;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: silver;
+        transition:0.2s;
+    -webkit-transition:0.2s;
+}
+
+/* Dropdown Content (Hidden by Default) mydropdown not used in css */
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color:rgba(255,255,255,0.9);
+    min-width: 160px;
+    z-index: 1;
+
+    height:100vh;
+    width:100vw;
+    top:55px;
+    text-align:center;
+
+    background: -webkit-linear-gradient(silver, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(silver, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(silver, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(silver, white); /* Standard syntax */
+        transition:0.2s;
+    -webkit-transition:0.2s;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    height:10vh;
+    font-size:5vh;
+    padding-top:5vh;
+        transition:0.2s;
+    -webkit-transition:0.2s;
+
+
+    color: black;
+
+
+
+}
+
+#dropdown1{
+    background-color:rgba(200,200,200,0.8)
+}
+
+#dropdown1:hover{
+        background-color:rgba(40,200,200,0.8)
+}
+#dropdown2:hover{
+        background-color:rgba(40,200,200,0.8)
+}
+#dropdown3:hover{
+        background-color:rgba(40,200,200,0.8)
+}
+#dropdown4:hover{
+        background-color:rgba(40,200,200,0.8)
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: black;
+    color:white;
+    -webkit-transition:0.2s;
+    transition:0.2s;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+#myDropdown {
+    opacity:0;
+    -webkit-transition:1s;
+    transition:1s;
+}
+
+#myDropdown.clicked{
+    opacity:1;
+    -webkit-transition:1s;
+    transition:1s;
+
+
+}
+
+
+
+
+/********************
+This Page (Custom)
+********************/
+
+
+#header {
+	position:absolute;
+	margin-top:8vw;
+	background-color:rgba(25,25,25,0.5);
+	width:100vw;
+	height:10vw;
+    display:block;
+    clear:both;
+
+}
+
+#header h1 {
+	text-align:center;
+	color:white;
+	font-size:4vw;
+}
+
+#headerImage {
+
+		position:absolute;
+		background-color:rgba(25,25,25,0.8);
+		height:25vw;
+		width:100vw;
+		top:18vw;
+		text-align:center;
+            display:block;
+    clear:both;
+
+}
+
+#headerImage img {
+
+	height:inherit;
+}
+
+#text {
+
+		position:absolute;
+			background-color:rgba(250,250,250,0.9);
+			color:black;
+	
+		top:43vw;
+		text-align:center;
+		font-size:2vw;
+		padding-left:5vw;
+		padding-right:5vw;
+		padding-top:1.5vw;
+            display:block;
+    clear:both;
+    min-height:40vh;
+   
+
+
+
+}
+
+#text p {
+	font-size:2vw;
+}
+
+
+/********************
+Button
+********************/
+.buttonContainer {
+
+
+
+    height:4vw;
+
+    position:absolute;
+    top:11.5vw;
+   
+    left:82vw;
+
+
+}
+
+
+
+
+.button {
+
+    border: none;
+    color: white;
+   
+
+    text-decoration: none;
+    display: inline-block;
+
+
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+    cursor: pointer;
+
+}
+
+.button3 {
+    background-color:rgba(0,255,210,0.9);
+    color: black; 
+
+   
+
+
+   
+
+    border:10px;
+    padding-left:2vw;
+    padding-right:2vw;
+    padding-top:0.5vw;
+    padding-bottom:0.5vw;
+    
+    
+
+    font-size:2vw;
+    font-family: 'Lato Light';
+    border-radius:10px;
+
+
+
+
+}
+
+.button3:hover {
+    background-color: white;
+    color: black;
+}
+
+#mainbutton {
+    
+
+    background-color:black;
+    border-color:white;
+
+}
+
+#mobileButtonBar {
+    display:none;
+}
+
+
+footer {
+    height:50px;
+
+
+}
+
+#xButton {
+    z-index:1;
+    position:fixed;
+    top:11vw;
+    right:6vw;
+}
+
+
+
+/********************
+FullScreen
+********************/
+
+#fullScreen {
+
+    height:100vh;
+    width:100vw;
+    position:fixed;
+    background-color:rgba(0,0,0,0.8);
+    overflow-y:scroll;
+
+}
+
+#imageContainer {
+    text-align:center;
+    margin-top:10vw;
+}
+
+#imageContainer img {
+    width:90vw;
+    max-width:1000px;
+
+
+}
+
+#fullScreen {
+
+
+
+}
+
+button #  {
+    position:fixed;
+    top:100px;
+}
+
+
+
+/********************
+Media Queries
+********************/
+
+@media (max-width:900px) {
+
+    #fullScreen {
+    margin-top:55px;
+    }
+
+
+    #mbc {
+        height:200px;
+        display:initial;
+    }
+	#nav {
+		display:none;
+	}
+	#navLogoMobile {
+    opacity:1;
+
+    }
+    #mobileTopBar {
+        opacity:1;
+    }
+
+    .navHole {
+        height:2vw;
+        min-height:55px;
+    }
+    #text p {
+    	font-size:2em;
+    }
+    #header {
+	position:absolute;
+	margin-top:55px;
+	height:120px;
+	}
+	#header h1 {
+		
+		font-size:1.8em;
+        margin-top:40px;
+		
+	}
+	#headerImage {
+
+		position:absolute;
+		background-color:rgba(25,25,25,0.8);
+	
+        height:250px;
+
+		top:245px;
+		text-align:center;
+        overflow:none;
+
+	}
+
+	#headerImage img {
+        max-width:100%;
+
+	}
+	#text {
+
+		position:absolute;
+
+
+		top:495px;
+		text-align:center;
+		font-size:1em;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:0px;
+	}
+
+	#text p {
+		font-size:1.5em;
+	}
+    .buttonContainer {
+        display:none;
+    }
+
+    .buttonContainer {
+
+
+
+    height:4vw;
+    z-index:2;
+    position:absolute;
+    top:11.5vw;
+    width:100vw;
+    left:82vw;
+
+
+}
+
+    #mobileButtonBar {
+        display:initial;
+        background-color:rgba(0,0,0,0.4);
+        width:100vw;
+        height:70px;
+        position:absolute;
+        top:175px;
+        text-align:center;
+    }
+
+    #mobileButtonBar .button3 {
+        position:relative;
+        top:-10px;
+
+    }
+
+
+
+
+.button {
+
+    border: none;
+    color: white;
+   
+
+    text-decoration: none;
+    display: inline-block;
+
+
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+    cursor: pointer;
+    white-space: nowrap;
+
+}
+ 
+ #view_button {
+  display:none;
+ }
+
+.button3 {
+    background-color:rgba(0,255,210,0.9);
+    color: black; 
+
+   
+
+
+   
+
+    border:10px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:5px;
+    padding-bottom:5px;
+    
+    
+
+    font-size:1.5em;
+    font-family: 'Lato Light';
+    border-radius:10px;
+    white-space: nowrap;
+
+
+
+
+
+
+}
+
+.button3:hover {
+    background-color: white;
+    color: black;
+}
+
+#mainbutton {
+    
+
+    background-color:black;
+    border-color:white;
+
+}
+
+
+}
+
+/*******************
+Footer
+*******************/
+
+#footer {
+    height:inherit;
+    background-color:rgba(0,0,0,1);
+    padding-bottom:2.5vw;
+    padding-top:2.5vw;
+
+
+}
+
+#icons {
+    float:right;
+    padding-right:25px;
+}
+
+#footer p {
+    color:white;
+    font-size:3vw;
+}
+
+#icons {
+    text-align:center;
+    padding-bottom:25px;
+}
+
+#icons img {
+    margin-right:25px;
+    height:50px;
+    margin-top:25px;
+    position:relative;
+    left:17.5px;
+
+}
+
+#icons a:hover {
+    cursor:pointer;
+}
+
+#bottomLogo {
+    margin-left:25px;
+}
+
+#bottomLogo img {
+    height:25px;
+    float:left;
+}
+
+#bottomLogo p {
+    font-size:1.3em;
+}
+
+#bottomLogoMobile {
+        min-width:100%;
+        display:none;
+}
+
+#bottomLogoMobile img {
+max-width:90%;
+padding-left:5%;
+
+}
+
+#footer ul {
+    color:white;
+    list-style-type:none;
+}
+
+#footer a {
+    color:white;
+    text-decoration:none;
+}
+
+#ext_footer_positioner {
+    position:relative;
+    bottom:0px;
+    width:100%;
+}
+
+@media (min-width:900px){
+        #dropdown {
+        display:none;
+    }
+        .dropdown{
+            display:none;
+        }
+
+
+
+
+}
+
+@media (max-width:1200px){
+    #nav li {
+        font-size:1.3em;
+        padding-left:1.3vw;
+
+
+    }
+
+
+}
+
+}
+@media (max-width:500px){
+    #mobileTopBar {
+        text-align:left;
+    }
+}
+
+@media (max-width:600px) {
+	#navLogoMobile {
+        position:relative;
+        right:25vw;
+  
+    }
+
+    #xButton {
+    z-index:1;
+    position:fixed;
+    top:15vh;
+
+    }
+
+    #header h1 {
+
+    font-size:3.8vh ;
+}
+    
+        #footer {
+        padding-bottom:100px;
+    }
+
+    #footer li {
+        
+        text-align:center;
+
+    }
+
+    #footer ul {
+        margin-left:0;
+        padding:0;
+        text-align:center;
+        position:relative;
+        top:30px;
+    }
+    
+    #footer li {
+        font-size:3vw;
+        position:relative;
+        padding-left:4.5vw;
+   
+    }
+
+}
+
+
+
+
+
