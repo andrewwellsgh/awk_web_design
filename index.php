@@ -76,6 +76,26 @@
              
 				
 				<div class="portfolioBody">
+
+					<!--icon section-->
+					<a href="brighter_hires.php"><div class="container">
+					  <img src="img/portfolioIcon/brighter_hires.png" alt="Brighter Hires" class="image">
+					  <div class="overlay">
+					    <div class="text">View Project >></div>
+					  </div>
+					  <h1>Brighter Hires</h1>
+					</div></a>
+					<!--icon section-->
+
+					<!--icon section-->
+					<a href="saxonPropertyImprovements.php"><div class="container">
+					  <img src="img/portfolioIcon/saxon-screenshot-final.jpg" alt="Saxon Property Improvements" class="image">
+					  <div class="overlay">
+					    <div class="text">View Project >></div>
+					  </div>
+					  <h1>Saxon Property Improvements</h1>
+					</div></a>
+					<!--icon section-->
                    
                     <!--icon section--> <!--
 					<a href="osborneplastering.php"><div class="container">
@@ -149,26 +169,6 @@
 					
 					<!--icon section-->
 
-					<!--icon section-->
-					<a href="brighter_hires.php"><div class="container">
-					  <img src="img/portfolioIcon/brighter_hires.pngs" alt="Brighter Hires" class="image">
-					  <div class="overlay">
-					    <div class="text">View Project >></div>
-					  </div>
-					  <h1>Brighter Hires</h1>
-					</div></a>
-					<!--icon section-->
-
-					<!--icon section-->
-					<a href="saxonPropertyImprovements.php"><div class="container">
-					  <img src="img/portfolioIcon/saxon-screenshot-final.jpg" alt="Saxon Property Improvements" class="image">
-					  <div class="overlay">
-					    <div class="text">View Project >></div>
-					  </div>
-					  <h1>Saxon Property Improvements</h1>
-					</div></a>
-					<!--icon section-->
-
 					<!--icon section - placeholder -->
 					<!--
 					<div class="container" id="noProject">
@@ -230,7 +230,7 @@
 				<h2 id="ready">Let's get started. </h2>
                 <br>
                 <p>Ready to start your new site? Great news.<br>Simply send a message through to set up a meeting.<br><br>My email address is:<br> 
-				<!--andrew @ awkwebdesign.com--> (Removed)
+				andyswebportfolio@gmail.com
                  <br><br>
                  Thank you for your time.
                  
