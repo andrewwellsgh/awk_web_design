@@ -6,7 +6,7 @@ Fonts & Tags
   font-family: 'Lato Light';
   font-style: normal;
   font-weight: 400;
-  src: local('Lato Light'), local('Lato-Light'), url(../fonts/latoLight.woff) format('woff');
+  src: local('Lato Light'), local('Lato-Light'), url(../fonts/latolight.woff) format('woff');
 }
 
 body {
