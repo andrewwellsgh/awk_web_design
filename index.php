@@ -61,7 +61,7 @@
 			<div id="portfolio">
 
 					
-					<div class="body_text dark">
+					<div class="body_text dark fade-edges">
                         
                     <h1>Portfolio</h1>
                         
@@ -75,7 +75,7 @@
 					</div>
              
 				
-				<div class="portfolioBody">
+				<div class="portfolioBody fade-edges">
 
 					<!--icon section-->
 					<a href="brighter_hires.php"><div class="container">
@@ -180,11 +180,11 @@
 				</div>
 			</div>
 
-			<div class="navHole" id="navHoleAbout">
+			<div class="navHole" id="navHoleAbout" fade-edges>
 			</div>
 
 
-			<div id="about">
+			<div id="about" class="fade-edges">
                 <br><br><br>
 				<h1>About</h1>
 				
