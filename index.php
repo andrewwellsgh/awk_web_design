@@ -6,6 +6,7 @@
 			<link type="text/css" rel="stylesheet" href="css/normalize.css"/>
 			<link type="text/css" rel="stylesheet" href="css/main2-4.css"/>
             <link rel="icon" href="/favicon3.ico" type="image/x-icon">
+			<script src="https://kit.fontawesome.com/54bbd3dcaa.js" crossorigin="anonymous"></script>
 		</head>
 		<body>
 
@@ -236,19 +237,6 @@
                  
 				</p> 
                 <br>
-
-				<!--<form action="emailme.php" method="post">
-					<h2> Your Name </h2>
-					<input label="Your Name" type="text" name="email" value="">
-					</input>
-					<br>
-					<h2> Your Message </h2>
-					<input id="message" label="Message">
-					</input>
-					<input type="submit" value="Send">
-					</input>
-				</form>-->
-
 
 			</div>
 

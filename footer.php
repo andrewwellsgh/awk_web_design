@@ -6,9 +6,17 @@
 					<a href="https://twitter.com/awkwebdesign" target="_blank"><img src="img/socialIcons/twitterWhite.png"></img></a>
 					<a href="mailto:andrew@awkwebdesign.com?Subject=Web Enquiry" target="_top"><img src="img/socialIcons/emailWhite.png"></img></a>
 					-->
+					<a href="https://github.com/andrewwellsgh" target="_blank" aria-label="GitHub">
+						<i class="fab fa-github"></i>
+					</a>
+					<a href="https://linkedin.com/in/andrewwellslinkedin/" target="_blank" aria-label="LinkedIn">
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<!--<a href="mailto:andyswebportfolio@gmail.com?Subject=Web Enquiry" aria-label="Email">
+						<i class="fas fa-envelope"></i>
+					</a>-->
 				</div>
 
-            
                 <div id="btm_container_logo">
                     <div id="bottomLogo">
                         <img src="img/logo/awkLogoWhitea.png" alt="bottom logo"></img>

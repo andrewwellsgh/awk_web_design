@@ -809,8 +809,27 @@ Footer
 
 }
 
-#icons a:hover {
-    cursor:pointer;
+#icons a {
+    /* Keep it simple */
+    display: inline-block;
+    padding: 0px;
+    margin:5px;
+    
+    /* Make the clickable area visually obvious while we fix it */
+    background: rgba(0, 0, 0, 0.2); 
+    border-radius: 20px;
+    
+    /* Ensure the link is on top of other footer elements */
+    position: relative;
+    z-index: 100;
+    font-size: 50px;
+}
+
+#icons i {
+    /* This makes the icon 'part' of the link, no weirdness */
+    color: white;
+    font-size: 64px;
+    display: block;
 }
 
 #bottomLogo {
