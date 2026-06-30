@@ -7,12 +7,26 @@ Built: ~2017
 
 Last Updated: 2026
 
-Deployment: The site is deployed to a secure Linux server.
+Deployment: Hosted on a hardened Linux server.
 
-Technical Notes
-Code Quality: This project represents an evolving portfolio. The codebase is functional, though it does not currently adhere to strict linting standards.
+Tech Stack
+Languages: PHP, JavaScript, CSS3, HTML5
 
-Testing: There is currently no automated test suite. This is a known area for future refactoring and improvement as the site continues to grow.
+Server Environment: LAMP Stack (Linux, Apache, MySQL, PHP)
 
-Feedback & Contributions
-While this is a personal portfolio, I am always open to constructive feedback or suggestions regarding the site's architecture and design.
+Infrastructure: DigitalOcean Droplet with SSH key authentication
+
+Future Improvements
+This project requires refactoring this project to align with modern development standards.
+Proposed future updates:
+
+Code Standardization: Implementing and running a linter to ensure consistent code style and readability.
+
+Testing Implementation: Developing a test suite to ensure functional integrity as I continue to update the site.
+
+Modernization: Refactoring older modules to improve performance and security.
+
+## License
+© 2026 Andrew Wells. All rights reserved. 
+
+The code in this repository is provided for viewing purposes only as part of my professional portfolio. No part of this code may be reproduced, distributed, or used in any other projects without express written permission from the author.
