@@ -1,32 +1,41 @@
-Readme - AWK Web Design
+<div align="center">
 
-This repository contains the source code for awkwebdesign.com, my personal portfolio site for web development.
+# AWK Web Design
 
-Project Overview
-Built: ~2017
+**The digital footprint of a Full Stack Developer.**
 
-Last Updated: 2026
+[Visit Site](https://www.awkwebdesign.com) • [GitHub](https://github.com/andrewwellsgh)
 
-Deployment: Hosted on a hardened Linux server.
+</div>
 
-Tech Stack
-Languages: PHP, JavaScript, CSS3, HTML5
+---
 
-Server Environment: LAMP Stack (Linux, Apache, MySQL, PHP)
+## 🚀 Overview
+**AWK Web Design** serves as my primary professional portfolio. Originally architected in 2017, the codebase is currently undergoing a 2026 modernization initiative to align with current industry standards. 
 
-Infrastructure: DigitalOcean Droplet with SSH key authentication
+The site is hosted on a hardened, custom-configured **Linux Server** (DigitalOcean), utilizing SSH key-based authentication for secure deployment.
 
-Future Improvements
-This project requires refactoring this project to align with modern development standards.
-Proposed future updates:
+## 🛠 Tech Stack
+| Category | Technology |
+| :--- | :--- |
+| **Languages** | PHP, JavaScript (ES6+), CSS3, HTML5 |
+| **Environment** | LAMP Stack (Linux, Apache, MySQL, PHP) |
+| **Infrastructure** | DigitalOcean, SSH, Hardened Linux Kernel |
 
-Code Standardization: Implementing and running a linter to ensure consistent code style and readability.
+---
 
-Testing Implementation: Developing a test suite to ensure functional integrity as I continue to update the site.
+## 📈 Roadmap (Future Improvements)
+I am committed to iterative refinement. The following areas are currently in the queue for professional-grade refactoring:
 
-Modernization: Refactoring older modules to improve performance and security.
+*   **Code Standardization:** Integration of linting protocols to ensure strict adherence to style guides and architectural consistency.
+*   **Test-Driven Development:** Implementation of a robust test suite to guarantee functional integrity and regression safety.
+*   **Performance Modernization:** Refactoring legacy modules to leverage modern PHP practices and optimized database interactions.
 
-## License
-© 2026 Andrew Wells. All rights reserved. 
+---
 
-The code in this repository is provided for viewing purposes only as part of my professional portfolio. No part of this code may be reproduced, distributed, or used in any other projects without express written permission from the author.
+## ⚖️ Intellectual Property
+**© 2026 Andrew Wells. All rights reserved.**
+
+The code in this repository is provided strictly for **viewing purposes** to demonstrate professional capabilities and architectural style. No part of this code may be reproduced, distributed, or utilized in any derivative projects without express written permission from the author.
+
+---
